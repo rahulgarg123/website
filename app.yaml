@@ -1,23 +1,21 @@
-application: rahuldotgarg
-version: 1
 runtime: python27
 threadsafe: false
 api_version: 1
 
 handlers:
-- url: /data
-  static_dir: data
+- url: /old_website
+  static_dir: old_website
 
 - url: /Rahul_Garg_files
   static_dir: Rahul_Garg_files
 
-- url: /(.*\.(|PNG|gif|png|jpg|ico|js|css))
+- url: /(.*\.(|PNG|gif|png|jpg|ico|js|css|pdf))
   static_files: \1
-  upload: (.*\.(gif|png|jpg|ico|js|css))
+  upload: (.*\.(gif|png|jpg|ico|js|css|pdf))
 
 - url: /robots.txt
   static_files: robots.txt
-  upload: robots.txt 
+  upload: robots.txt
 
 
 - url: .*
