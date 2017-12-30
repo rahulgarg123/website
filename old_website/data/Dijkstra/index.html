@@ -1,0 +1,513 @@
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<html>
+
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<base target="_top">
+<style type="text/css">
+  
+
+/* default css */
+
+table {
+  font-size: 1em;
+  line-height: inherit;
+  border-collapse: collapse;
+}
+
+
+tr {
+  
+  text-align: left;
+  
+}
+
+
+div, address, ol, ul, li, option, select {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+p {
+  margin: 0px;
+}
+
+
+pre {
+  font-family: Courier New;
+  white-space: pre-wrap;
+  margin:0;
+}
+
+body {
+  margin: 6px;
+  padding: 0px;
+  font-family: Verdana, sans-serif;
+  font-size: 10pt;
+  background-color: #ffffff;
+  color: #000;
+}
+
+
+img {
+  -moz-force-broken-image-icon: 1;
+}
+
+@media screen {
+  html.pageview {
+    background-color: #f3f3f3 !important;
+    overflow-x: hidden;
+    overflow-y: scroll;
+  }
+
+  
+
+  body {
+    min-height: 1100px;
+    
+    counter-reset: __goog_page__;
+  }
+  * html body {
+    height: 1100px;
+  }
+  .pageview body {
+    border-top: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    border-right: 2px solid #bbb;
+    border-bottom: 2px solid #bbb;
+    width: 648px !important;
+    margin: 15px auto 25px;
+    padding: 40px 50px;
+  }
+  /* IE6 */
+  * html {
+    overflow-y: scroll;
+  }
+  * html.pageview body {
+    overflow-x: auto;
+  }
+  /* Prevent repaint errors when scrolling in Safari. This "Star-7" css hack
+     targets Safari 3.1, but not WebKit nightlies and presumably Safari 4.
+     That's OK because this bug is fixed in WebKit nightlies/Safari 4 :-). */
+  html*#wys_frame::before {
+    content: '\A0';
+    position: fixed;
+    overflow: hidden;
+    width: 0;
+    height: 0;
+    top: 0;
+    left: 0;
+  }
+  
+
+  
+    
+    
+    .writely-callout-data {
+      display: inline-block;
+      width: 1px;
+      height: 1px;
+      overflow: hidden;
+      margin-left: -1px;
+    }
+    
+
+    .writely-footnote-marker {
+      background-image: url('MISSING');
+      background-color: transparent;
+      background-repeat: no-repeat;
+      width: 7px;
+      overflow: hidden;
+      height: 16px;
+      vertical-align: top;
+
+      
+      -moz-user-select: none;
+    }
+    .editor .writely-footnote-marker {
+      cursor: move;
+    }
+    .writely-footnote-marker-highlight {
+      background-position: -15px 0;
+      -moz-user-select: text;
+    }
+    .writely-footnote-hide-selection ::-moz-selection, .writely-footnote-hide-selection::-moz-selection {
+      background: transparent;
+    }
+    .writely-footnote-hide-selection ::selection, .writely-footnote-hide-selection::selection {
+      background: transparent;
+    }
+    .writely-footnote-hide-selection {
+      cursor: move;
+    }
+
+    /* Comments */
+    .writely-comment-yellow {
+      background-color: #ffffd7;
+    }
+    .writely-comment-orange {
+      background-color: #ffe3c0;
+    }
+    .writely-comment-pink {
+      background-color: #ffd7ff;
+    }
+    .writely-comment-green {
+      background-color: #d7ffd7;
+    }
+    .writely-comment-blue {
+      background-color: #d7ffff;
+    }
+    .writely-comment-purple {
+      background-color: #eed7ff;
+    }
+
+  
+
+
+  
+  .br_fix span+br:not(:-moz-last-node) {
+    
+    position:relative;
+    
+    left: -1ex
+    
+  }
+
+  
+  #cb-p-tgt {
+    font-size: 8pt;
+    padding: .4em;
+    background-color: #ddd;
+    color: #333;
+  }
+  #cb-p-tgt-can {
+    text-decoration: underline;
+    color: #36c;
+    font-weight: bold;
+    margin-left: 2em;
+  }
+  #cb-p-tgt .spin {
+    width: 16px;
+    height: 16px;
+    background: url(//ssl.gstatic.com/docs/clipboard/spin_16o.gif) no-repeat;
+  }
+}
+
+h6 { font-size: 8pt }
+h5 { font-size: 8pt }
+h4 { font-size: 10pt }
+h3 { font-size: 12pt }
+h2 { font-size: 14pt }
+h1 { font-size: 18pt }
+
+blockquote {padding: 10px; border: 1px #DDD dashed }
+
+.webkit-indent-blockquote { border: none; }
+
+a img {border: 0}
+
+.pb {
+  border-width: 0;
+  page-break-after: always;
+  /* We don't want this to be resizeable, so enforce a width and height
+     using !important */
+  height: 1px !important;
+  width: 100% !important;
+}
+
+.editor .pb {
+  border-top: 1px dashed #C0C0C0;
+  border-bottom: 1px dashed #C0C0C0;
+}
+
+div.google_header, div.google_footer {
+  position: relative;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+
+/* Table of contents */
+.editor div.writely-toc {
+  background-color: #f3f3f3;
+  border: 1px solid #ccc;
+}
+.writely-toc > ol {
+  padding-left: 3em;
+  font-weight: bold;
+}
+ol.writely-toc-subheading {
+  padding-left: 1em;
+  font-weight: normal;
+}
+/* IE6 only */
+* html writely-toc ol {
+  list-style-position: inside;
+}
+.writely-toc-none {
+  list-style-type: none;
+}
+.writely-toc-decimal {
+  list-style-type: decimal;
+}
+.writely-toc-upper-alpha {
+  list-style-type: upper-alpha;
+}
+.writely-toc-lower-alpha {
+  list-style-type: lower-alpha;
+}
+.writely-toc-upper-roman {
+  list-style-type: upper-roman;
+}
+.writely-toc-lower-roman {
+  list-style-type: lower-roman;
+}
+.writely-toc-disc {
+  list-style-type: disc;
+}
+
+/* Ordered lists converted to numbered lists can preserve ordered types, and
+   vice versa. This is confusing, so disallow it */
+ul[type="i"], ul[type="I"], ul[type="1"], ul[type="a"], ul[type="A"] {
+  list-style-type: disc;
+}
+
+ol[type="disc"], ol[type="circle"], ol[type="square"] {
+  list-style-type: decimal;
+}
+
+/* end default css */
+
+
+  /* default print css */
+  @media print {
+    body {
+      padding: 0;
+      margin: 0;
+    }
+
+    div.google_header, div.google_footer {
+      display: block;
+      min-height: 0;
+      border: none;
+    }
+
+    div.google_header {
+      flow: static(header);
+    }
+
+    /* used to insert page numbers */
+    div.google_header::before, div.google_footer::before {
+      position: absolute;
+      top: 0;
+    }
+
+    div.google_footer {
+      flow: static(footer);
+    }
+
+    /* always consider this element at the start of the doc */
+    div#google_footer {
+      flow: static(footer, start);
+    }
+
+    span.google_pagenumber {
+      content: counter(page);
+    }
+
+    span.google_pagecount {
+      content: counter(pages);
+    }
+
+    .endnotes {
+      page: endnote;
+    }
+
+    /* MLA specifies that endnotes title should be 1" margin from the top of the page. */
+    @page endnote {
+      margin-top: 1in;
+    }
+
+    callout.google_footnote {
+      
+      display: prince-footnote;
+      footnote-style-position: inside;
+      /* These styles keep the footnote from taking on the style of the text
+         surrounding the footnote marker. They can be overridden in the
+         document CSS. */
+      color: #000;
+      font-family: Verdana;
+      font-size: 10.0pt;
+      font-weight: normal;
+    }
+
+    /* Table of contents */
+    #WritelyTableOfContents a::after {
+      content: leader('.') target-counter(attr(href), page);
+    }
+
+    #WritelyTableOfContents a {
+      text-decoration: none;
+      color: black;
+    }
+
+    /* Comments */
+    .writely-comment-yellow {
+      background-color: #ffffd7;
+    }
+    .writely-comment-orange {
+      background-color: #ffe3c0;
+    }
+    .writely-comment-pink {
+      background-color: #ffd7ff;
+    }
+    .writely-comment-green {
+      background-color: #d7ffd7;
+    }
+    .writely-comment-blue {
+      background-color: #d7ffff;
+    }
+    .writely-comment-purple {
+      background-color: #eed7ff;
+    }
+  }
+
+  @page {
+    @top {
+      content: flow(header);
+    }
+    @bottom {
+      content: flow(footer);
+    }
+    @footnotes {
+      border-top: solid black thin;
+      padding-top: 8pt;
+    }
+  }
+  /* end default print css */
+
+
+/* custom css */
+
+
+/* end custom css */
+
+/* ui edited css */
+
+body {
+  font-family: Verdana;
+  
+  font-size: 10.0pt;
+  line-height: normal;
+  background-color: #ffffff;
+}
+/* end ui edited css */
+
+
+/* editor CSS */
+.editor a:visited {color: #551A8B}
+.editor table.zeroBorder {border: 1px dotted gray}
+.editor table.zeroBorder td {border: 1px dotted gray}
+.editor table.zeroBorder th {border: 1px dotted gray}
+
+
+.editor div.google_header, .editor div.google_footer {
+  border: 2px #DDDDDD dashed;
+  position: static;
+  width: 100%;
+  min-height: 2em;
+}
+
+.editor .misspell {background-color: yellow}
+
+.editor .writely-comment {
+  font-size: 9pt;
+  line-height: 1.4;
+  padding: 1px;
+  border: 1px dashed #C0C0C0
+}
+
+
+/* end editor CSS */
+
+</style>
+
+  
+  <title>Bead Sort and other random musings</title>
+
+</head>
+
+<body 
+    
+    >
+    
+    
+    
+<div style=TEXT-ALIGN:left>
+  I recently (again) came across <a href=http://en.wikipedia.org/wiki/Bead_sort id=y9nu title="Bead Sort">Bead Sort</a>. If you don't already know it, I recommend that you at least read the <a href=http://en.wikipedia.org/wiki/Bead_sort id=ho0g title="wikipedia article">wikipedia article</a>. After the initial awe and wonder, you start to see that it's not something very special, i.e., an actual implementation of it would not look very different from <a href=http://en.wikipedia.org/wiki/Bucket_sort id=thk_ title="bucket sort">bucket sort</a> and O(1) complexity seems like a hoax. However, what if there were machines that actually stored data in form of beads on an abacus? It would be pretty stupid to build a machine like that since simple operations like inserting numbers, changing numbers may be insanely expensive, but that machine *will do* sorting in O(1) time! (If you want to nit pick, the beads will take a finite amount of time to fall down)
+</div>
+<br>
+Lets now consider another hypothetical machine that is designed to efficiently perform graph algorithms. Here's a vivid picture to help your imagination:<br>
+<br>
+<div id=w-t4 style=TEXT-ALIGN:left>
+  <img src="images/dczrhhx6_68fnxqqsfq_b.jpg" style="WIDTH:400px; HEIGHT:298.729px">
+</div>
+<br>
+<br>
+Your machine has an infinite supply of rope and ping pong balls (that can be tied to the rope). As you can guess, this machine actually stores the created graphs in their physically explicit forms, i.e., ping pong balls as nodes of the graph connected with ropes. If you execute a sequence of commands like the following:<br>
+<br>
+CreateNewGraph();<br>
+InsertFirstNode();<br>
+InsertNode(0);<br>
+InsertNode(1);<br>
+<br>
+You can imagine a small hyperactive guy inside the machine running around, cutting out pieces of rope and attaching it with ping pong balls to construct the explicit graph you want to create (Lets call this guy Shaktimaan, or &lt;insert-your-favorite-superhero&gt;, though the act of choosing Shaktimaan is not supposed to reveal anything abut my favorite superheros). Assuming that Shakitmaan still endorses Parle-G, your machine would also need an infinite supply of Parle-G in addition to ropes and ping pong balls to "power" the machine. )<br>
+<br>
+<div id=othb style=TEXT-ALIGN:left>
+  <img src="images/dczrhhx6_69fv4kpp5m_b.jpg" style="WIDTH:600px; HEIGHT:201.018px">
+</div>
+<br>
+<br>
+Let us see how this wonderful machine could find distance between any two nodes in O(1). It is as simple as Shaktimaan holding the two nodes and stretching them as far as he can. Again, below is a picture to help your imagination:<br>
+<br>
+<div id=igqz style=TEXT-ALIGN:left>
+  <img src="images/dczrhhx6_70c8t3mxdk_b.jpg" style="WIDTH:600px; HEIGHT:164.742px">
+</div>
+<br>
+<br>
+<br>
+Okay, how about finding the distance to all nodes from a particular node? One solution is to let Shaktimaan eat a lot of Parle-G, sprout an additional n-2 hands where n is the number of nodes in the graph and then he can measure all distance simultaneously (and I refrain from posting a rather disturbing picture of this). But how about doing something similar to bead sort, i.e., it can be done by simply "hanging" the graph from the source node (the node you want to compute distance from) and just see how far each node hangs down (which can be done instantaneously using Shaktimaan-vision).<br>
+<br>
+Actually this is also very similar to what Dijkstra's algorithm does. But instead of applying gravity simultaneously to all the nodes, it does kind of a gravity-sweep from top to bottom (think of a comb moving down an entangled mass of hair and straightening them as it goes down). However, there exists a more beautiful and closer analogy. Imagine your graph is lying at a bottom of an empty tank with the source node (ping pong ball) nailed to the bottom. Now, imagine running water into this tank, gradually.&nbsp; Initially, all ping pong balls float on the surface of water except the one that is nailed to the bottom. Soon enough , the ball that is closest to the source node gets pulled down below the surface and the rope (edge) joining them becomes taut. This corresponds to the removing the first node in the heap in Dijkstra run. Each ball going down the surface corresponds to a node being removed from the heap in the corresponding Dijkstra run. At any given stage, the balls floating on the surface correspond to the nodes in the heap. Pictures below:<br>
+<br>
+<div>
+  <div id=s4vp style=TEXT-ALIGN:left>
+    <img src="images/dczrhhx6_71fcrnm2g7_b.jpg" style="WIDTH:400px; HEIGHT:504.744px">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <img src="images/drawing_sMDwanfTrOI_TySVK5NGXiQ_2.png">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<img src="images/dczrhhx6_72gfqtd4hg_b.jpg" style="WIDTH:400px; HEIGHT:382.301px">
+  </div>
+  <br>
+  <br>
+  Hence the wonder-machine can apply Dijkstra in O(1), by just letting the graph hang from the source node. However, once we are done, we would need to "collect" the graph back. Imagine the following scene:<br>
+  <br>
+</div>
+<div>
+  <div id=nm_m style=TEXT-ALIGN:left>
+    <img src="images/dczrhhx6_73fp4rqfgd_b.jpg" style="WIDTH:400px; HEIGHT:438.986px">
+  </div>
+  <br>
+  <br>
+  That is, Shaktimaan is sitting at the top, and he has to pull up nodes hanging below one by one and put all the graph in the box. Also, let us assume that shaktimaan recently has a distal clavicle resection of the shoulder and is unwilling to reach too far down irrespective of the amount of Parle G's fed. In that case, the optimal strategy for him is to retrieve the node that is closest to him, and keep doing it iteratively till the whole graph is retrieved (which is guaranteed for a connected graph). Actually this exactly simulates the <a href="http://en.wikipedia.org/wiki/Prim's_algorithm">Prim's algorithm</a>, and the order of fetching the nodes corresponds to the Minimum Spanning Tree. Yeah, not as cool as the Bead Sort, but then I would not have written it here but in a <a href=http://www.cs.auckland.ac.nz/~jaru003/research/publications/journals/beadsort.pdf id=ryc4 title=paper>paper</a>. But I like to keep pictures like these in mind, when implementing these algorithms.<br>
+  <br>
+  <br>
+  <div>
+    What about directed graphs? Other algorithms? <a href="/htbin-post/unrestricted/mailto2.pl?to=rahul;sub=beadsort-post">Comments/Suggestions/Feedback/Anything-that-is-not-spam?</a>
+  </div>
+  <br>
+</div>
+<br>
+<br></body>
+</html>
