@@ -139,6 +139,40 @@
           </td>
         </tr>
 
+        <tr onmouseout="portrait_pixel3_stop()" onmouseover="portrait_pixel3_start()" >
+          <td width="25%">
+            <div class="one">
+            <div class="two" id = 'portrait_pixel3_image'><img src='learned.jpg'></div>
+            <img src='stereo.jpg'>
+            </div>
+            <script type="text/javascript">
+            function portrait_pixel3_start() {
+            document.getElementById('portrait_pixel3_image').style.opacity = "1";
+            }
+            function portrait_pixel3_stop() {
+            document.getElementById('portrait_pixel3_image').style.opacity = "0";
+            }
+            portrait_pixel3_stop()
+            </script>
+          </td>
+          <td valign="top" width="75%">
+    	  <a href="https://ai.googleblog.com/2018/11/learning-to-predict-depth-on-pixel-3.html">
+                <papertitle>Learned Depth for Portrait Mode on Google Pixel 3</papertitle>
+    	  </a>
+    	  <br>
+        <a href="https://photos.app.goo.gl/KQWZwexwvJX6JyH16">Example photos</a>
+        /
+        <a href="https://www.dpreview.com/articles/7921074499/five-ways-google-pixel-3-pushes-the-boundaries-of-computational-photography">p</a>
+        <a href="https://www.androidpolice.com/2018/11/29/google-used-this-ridiculous-5-phone-case-to-fine-tune-the-pixel-3s-portrait-mode">r</a>
+        <a href="https://www.cnet.com/news/google-frankenphone-taught-pixel-3-ai-to-take-portrait-photos">e</a>
+        <a href="https://9to5google.com/2018/11/29/google-pixel-3-portrait-mode-ml/">s</a>
+        <a href="https://thenextweb.com/artificial-intelligence/2018/11/30/google-built-a-rig-with-five-pixel-3s-to-improve-the-phones-portrait-mode-photos/">s</a>
+
+            <p></p>
+            <p>A neural network trained using images from a custom 5 camera rig predicts better quality depth than stereo algorithms. Used for Portrait Mode on Google Pixel 3.</p>
+          </td>
+        </tr>
+
         <tr onmouseout="flutter_stop()" onmouseover="flutter_start()" >
           <td width="25%">
             <div class="one">
