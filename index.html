@@ -180,6 +180,42 @@
           </td>
         </tr>
 
+
+        <tr onmouseout="portrait_pixel4_stop()" onmouseover="portrait_pixel4_start()" >
+          <td width="25%">
+            <div class="one">
+            <div class="two" id = 'portrait_pixel4_image'><img src='fused_depth_labeled.jpg'></div>
+            <img src='dual_pixel_labeled.jpg'>
+            </div>
+            <script type="text/javascript">
+            function portrait_pixel4_start() {
+            document.getElementById('portrait_pixel4_image').style.opacity = "1";
+            }
+            function portrait_pixel4_stop() {
+            document.getElementById('portrait_pixel4_image').style.opacity = "0";
+            }
+            portrait_pixel4_stop()
+            </script>
+          </td>
+          <td valign="top" width="75%">
+    	  <a href="https://ai.googleblog.com/2019/12/improvements-to-portrait-mode-on-google.html">
+                <papertitle>Depth from Dual-Cameras and Dual-Pixels for Google Pixel 4</papertitle>
+    	  </a>
+    	  <br>
+        <a href="https://photos.app.goo.gl/JM7HLRx8LpwHvXnh6">Example photos</a>
+        /
+        <a href="https://www.androidauthority.com/google-pixel-4-portrait-mode-1066747/">p</a>
+        <a href="https://www.androidcentral.com/heres-how-google-uses-dual-cameras-pixel-4s-portrait-mode">r</a>
+        <a href="https://9to5google.com/2019/12/16/pixel-4-portrait-mode/">e</a>
+        <a href="https://www.slashgear.com/google-spills-the-pixel-4s-camera-magic-17603633/">s</a>
+        <a href="https://androidcommunity.com/google-improves-pixel-4-pixel-4-xl-portrait-mode-20191217/">s</a>
+
+            <p></p>
+            <p>Fuse complementary cues from dual-pixels and dual-cameras for high quality depth on Google Pixel 4.</p>
+          </td>
+        </tr>
+
+
         <tr onmouseout="flutter_stop()" onmouseover="flutter_start()" >
           <td width="25%">
             <div class="one">
