@@ -1,0 +1,324 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+  <meta name=viewport content=“width=800”>
+  <meta name="generator" content="HTML Tidy for Linux/x86 (vers 11 February 2007), see www.w3.org">
+  <style type="text/css">
+    /* Color scheme stolen from Sergey Karayev */
+    a {
+    color: #1772d0;
+    text-decoration:none;
+    }
+    a:focus, a:hover {
+    color: #f09228;
+    text-decoration:none;
+    }
+    body,td,th,tr,p,a {
+    font-family: 'Lato', Verdana, Helvetica, sans-serif;
+    font-size: 14px
+    }
+    strong {
+    font-family: 'Lato', Verdana, Helvetica, sans-serif;
+    font-size: 14px;
+    }
+    heading {
+    font-family: 'Lato', Verdana, Helvetica, sans-serif;
+    font-size: 22px;
+    }
+    papertitle {
+    font-family: 'Lato', Verdana, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: 700
+    }
+    name {
+    font-family: 'Lato', Verdana, Helvetica, sans-serif;
+    font-size: 32px;
+    }
+    .one
+    {
+    width: 160px;
+    height: 160px;
+    position: relative;
+    }
+    .two
+    {
+    width: 160px;
+    height: 160px;
+    position: absolute;
+    transition: opacity .2s ease-in-out;
+    -moz-transition: opacity .2s ease-in-out;
+    -webkit-transition: opacity .2s ease-in-out;
+    }
+    .fade {
+     transition: opacity .2s ease-in-out;
+     -moz-transition: opacity .2s ease-in-out;
+     -webkit-transition: opacity .2s ease-in-out;
+    }
+    span.highlight {
+        background-color: #ffffd0;
+    }
+  </style>
+  <title>Rahul Garg</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=us-ascii">
+  <link href='http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  </head>
+  <body>
+  <table width="800" border="0" align="center" cellspacing="0" cellpadding="0">
+    <tr>
+    <td>
+      <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+      <tr>
+        <td width="67%" valign="middle">
+        <p align="center">
+          <name>Rahul Garg</name>
+        </p>
+        <p>I am a staff research scientist at Google, where I work on computer vision, machine learning and computational photography to build features and products that delight users. I have worked on <a href="https://blog.google/products/photos/magic-eraser/">Magic Eraser</a> and <a href="https://blog.google/products/android/new-android-features-march-2022/#:~:text=Turn%20more%20photos,with%20Portrait%20Blur">Portrait Blur</a> for Google Photos, <a href="https://ai.googleblog.com/2018/11/learning-to-predict-depth-on-pixel-3.html">Portrait Mode</a> for Pixel Phones, <a href="https://workspace.google.com/blog/product-announcements/introducing-new-ai-to-help-people-thrive-in-hybrid-work#:~:text=portrait%20restore%20uses%20google%E2%80%99s%20ai%20to%20help%20improve%20your%20video%20quality%20by%20addressing%20issues%20caused%20by%20low%20light%2C%20low%20quality%20webcams%2C%20or%20poor%20network%20connectivity.%20this%20processing%20automatically%20happens%20in%20the%20cloud%20to%20enhance%20video%20quality%20without%20impacting%20device%20performance.">Portrait Restore</a> for Google Meet, Hand Tracking for AR/VR, and <a href="http://googlephotos.blogspot.com/2010/08/picasa-38-face-movies-picnik.html">Face Videos</a> for Google Picasa.
+        </p>
+        <p>Before Google, I was one of the first employees at <a href="https://flutterapp.com/">Flutter</a>, a startup acquired by Google. I completed my PhD in Computer Science and Engineering at <a href="https://www.cs.washington.edu/">University of Washington</a>. In past life, I spent four wonderful years at <a href="http://www.cse.iitd.ernet.in/">IIT Delhi</a> where I got my Bachelors degree and graduated with President's Gold Medal.
+        </p>
+        <p align=center>
+          <a href="cv.pdf">CV</a> &nbsp/&nbsp 
+          <a href="mailto:rahul.gargrahul@gmail.com">Email</a> &nbsp/&nbsp
+          <a href="https://scholar.google.com/citations?user=0eQjcEEAAAAJ">Google Scholar</a> &nbsp/&nbsp
+          <a href="https://www.linkedin.com/in/rahulgargrahul/"> LinkedIn </a>
+          <!-- <a href="https://drive.google.com/file/d/0B9FvCC1dMMyGVWlnSWlEdWk4cFU/view?usp=sharing"> Thesis </a> -->
+        </p>
+        </td>
+        <td width="33%">
+        <img src="RahulGarg_small.jpg">
+        </td>
+      </tr>
+      </table>
+      <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+      <tr>
+        <td width="100%" valign="middle">
+          <p>
+          Selected projects:
+          </p>
+        </td>
+      </tr>
+      </table>
+
+      <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+
+        <tr onmouseout="portrait_stop()" onmouseover="portrait_start()" >
+          <td width="25%">
+            <div class="one">
+            <div class="two" id = 'portrait_image'><img src='portrait_after.jpg'></div>
+            <img src='portrait_before.jpg'>
+            </div>
+            <script type="text/javascript">
+            function portrait_start() {
+            document.getElementById('portrait_image').style.opacity = "1";
+            }
+            function portrait_stop() {
+            document.getElementById('portrait_image').style.opacity = "0";
+            }
+            portrait_stop()
+            </script>
+          </td>
+          <td valign="top" width="75%">
+    	  <a href="https://research.googleblog.com/2017/10/portrait-mode-on-pixel-2-and-pixel-2-xl.html">
+                <papertitle>Portrait Mode on Google Pixel 2</papertitle>
+    	  </a>
+    	  <br>
+        <a href="https://photos.app.goo.gl/InOY0dQClVGy1siT2">Example photos</a>
+        /
+        <a href="https://www.theverge.com/2017/10/17/16486108/google-pixel-2-xl-review-android-phone-camera">p</a>
+        <a href="https://www.cnet.com/news/how-googles-pixel-2-camera-outpaces-last-years-photo-tech/">r</a>
+        <a href="https://techcrunch.com/2017/10/17/pixel-2-and-pixel-2-xl-reaffirm-googles-top-spot-among-smartphone-cameras/">e</a>
+        <a href="http://nymag.com/selectall/article/google-pixel-2-review-best-smartphone-camera.html">s</a>
+        <a href="https://www.slashgear.com/google-pixel-2-review-17504102/">s</a>
+	/
+        <a href="https://arxiv.org/abs/1806.04171">SIGGRAPH'18 Paper</a>
+
+
+            <p></p>
+            <p>Synthesize shallow depth of field images on Google Pixel 2 phone using a single lens. <a href="https://www.dxomark.com/google-pixel-2-reviewed-sets-new-record-smartphone-camera-quality/">Top rated</a> camera phone of 2017 by DxO.</p>
+          </td>
+        </tr>
+
+        <tr onmouseout="portrait_pixel3_stop()" onmouseover="portrait_pixel3_start()" >
+          <td width="25%">
+            <div class="one">
+            <div class="two" id = 'portrait_pixel3_image'><img src='learned.jpg'></div>
+            <img src='stereo.jpg'>
+            </div>
+            <script type="text/javascript">
+            function portrait_pixel3_start() {
+            document.getElementById('portrait_pixel3_image').style.opacity = "1";
+            }
+            function portrait_pixel3_stop() {
+            document.getElementById('portrait_pixel3_image').style.opacity = "0";
+            }
+            portrait_pixel3_stop()
+            </script>
+          </td>
+          <td valign="top" width="75%">
+    	  <a href="https://ai.googleblog.com/2018/11/learning-to-predict-depth-on-pixel-3.html">
+                <papertitle>Learned Depth on Google Pixel 3</papertitle>
+    	  </a>
+    	  <br>
+        <a href="https://photos.app.goo.gl/KQWZwexwvJX6JyH16">Example photos</a>
+        /
+        <a href="https://www.dpreview.com/articles/7921074499/five-ways-google-pixel-3-pushes-the-boundaries-of-computational-photography">p</a>
+        <a href="https://www.androidpolice.com/2018/11/29/google-used-this-ridiculous-5-phone-case-to-fine-tune-the-pixel-3s-portrait-mode">r</a>
+        <a href="https://www.cnet.com/news/google-frankenphone-taught-pixel-3-ai-to-take-portrait-photos">e</a>
+        <a href="https://9to5google.com/2018/11/29/google-pixel-3-portrait-mode-ml/">s</a>
+        <a href="https://thenextweb.com/artificial-intelligence/2018/11/30/google-built-a-rig-with-five-pixel-3s-to-improve-the-phones-portrait-mode-photos/">s</a>
+        / ICCV'19
+	<a href="https://arxiv.org/abs/1904.05822">(paper</a>
+	|
+	<a href="http://bit.ly/dual_pixels">code)</a>
+	/ ICCP'19
+	<a href="https://ieeexplore.ieee.org/abstract/document/8747340">(paper</a>
+	|
+	<a href="https://github.com/google-research/libsoftwaresync/">code)</a>
+
+            <p></p>
+            <p>A neural network trained using images from a custom five camera rig predicts better quality depth than stereo algorithms. Powers Portrait Mode on Google Pixel 3 and 3a.</p>
+          </td>
+        </tr>
+
+
+        <tr onmouseout="portrait_pixel4_stop()" onmouseover="portrait_pixel4_start()" >
+          <td width="25%">
+            <div class="one">
+            <div class="two" id = 'portrait_pixel4_image'><img src='fused_depth_labeled.jpg'></div>
+            <img src='dual_pixel_labeled.jpg'>
+            </div>
+            <script type="text/javascript">
+            function portrait_pixel4_start() {
+            document.getElementById('portrait_pixel4_image').style.opacity = "1";
+            }
+            function portrait_pixel4_stop() {
+            document.getElementById('portrait_pixel4_image').style.opacity = "0";
+            }
+            portrait_pixel4_stop()
+            </script>
+          </td>
+          <td valign="top" width="75%">
+    	  <a href="https://ai.googleblog.com/2019/12/improvements-to-portrait-mode-on-google.html">
+                <papertitle>Depth from Dual-Cameras and Dual-Pixels for Google Pixel 4</papertitle>
+    	  </a>
+    	  <br>
+        <a href="https://photos.app.goo.gl/JM7HLRx8LpwHvXnh6">Example photos</a>
+        /
+        <a href="https://www.androidauthority.com/google-pixel-4-portrait-mode-1066747/">p</a>
+        <a href="https://www.androidcentral.com/heres-how-google-uses-dual-cameras-pixel-4s-portrait-mode">r</a>
+        <a href="https://9to5google.com/2019/12/16/pixel-4-portrait-mode/">e</a>
+        <a href="https://www.slashgear.com/google-spills-the-pixel-4s-camera-magic-17603633/">s</a>
+        <a href="https://androidcommunity.com/google-improves-pixel-4-pixel-4-xl-portrait-mode-20191217/">s</a>
+	/
+	<a href= "https://augmentedperception.github.io/du2net/">
+	ECCV'20 paper
+	</a>
+            <p></p>
+            <p>Fuse complementary cues from dual-pixels and dual-cameras for high quality depth on Google Pixel 4.</p>
+          </td>
+        </tr>
+
+
+        <tr onmouseout="flutter_stop()" onmouseover="flutter_start()" >
+          <td width="25%">
+            <div class="one">
+            <div class="two" id = 'flutter_image'><img src='flutter_after.png'></div>
+            <img src='flutter_before.png'>
+            </div>
+            <script type="text/javascript">
+            function flutter_start() {
+            document.getElementById('flutter_image').style.opacity = "1";
+            }
+            function flutter_stop() {
+            document.getElementById('flutter_image').style.opacity = "0";
+            }
+            flutter_stop()
+            </script>
+          </td>
+          <td valign="top" width="75%">
+    	  <a href="https://flutterapp.com/">
+                <papertitle>Flutter: Hand Gesture Detection</papertitle>
+    	  </a>
+    	  <br>
+        <a href="https://vimeo.com/89458922">Marketing video</a>
+        /
+        <a href="https://techcrunch.com/2013/10/02/google-acquires-yc-backed-flutter-a-gesture-recognition-technology-startup/">p</a>
+        <a href="https://arstechnica.com/gadgets/2013/10/hands-on-with-googles-latest-acquisition-flutter-a-webcam-gesture-app/">r</a>
+        <a href="https://www.wired.com/2012/03/look-ma-no-trackpad/">e</a>
+        <a href="https://www.technologyreview.com/s/509041/flutter-adds-gestural-controls-to-netflix-youtube-and-more/">s</a>
+        <a href="https://thenextweb.com/google/2013/10/03/google-acquires-hand-gesture-interface-startup-flutter/">s</a>
+
+            <p></p>
+            <p> Low power, real-time hand gesture detection for media control. Mac app rated 4.5+ stars and among Apple's best apps of the year.</p>
+          </td>
+        </tr>
+
+        <tr onmouseout="face_movie_stop()" onmouseover="face_movie_start()" >
+          <td width="25%">
+            <div class="one">
+            <div class="two" id = 'face_movie_image'><img src='face_movie_after.gif'></div>
+            <img src='face_movie_before.gif'>
+            </div>
+            <script type="text/javascript">
+            function face_movie_start() {
+            document.getElementById('face_movie_image').style.opacity = "1";
+            }
+            function face_movie_stop() {
+            document.getElementById('face_movie_image').style.opacity = "0";
+            }
+            face_movie_stop()
+            </script>
+          </td>
+          <td valign="top" width="75%">
+    	  <a href="http://googlephotos.blogspot.com/2010/08/picasa-38-face-movies-picnik.html">
+                <papertitle>Face Movies in Google Picasa</papertitle>
+    	  </a>
+    	  <br>
+        <a href="https://www.youtube.com/watch?v=fLQtssJDMMc">video</a>
+        /
+        <a href="http://grail.cs.washington.edu/photobios/">SIGGRAPH paper</a>
+        /
+        <a href="http://grail.cs.washington.edu/projects/movingportraits/">CACM Cover Story</a>
+
+
+            <p></p>
+            <p> Automatically create face and expression aligned movies from photo collections. Unfortunately, Picasa is discontinued but <a href="https://www.youtube.com/watch?v=YOVdtSBCtuY">user</a> <a href="https://www.youtube.com/watch?v=AGYnv45UfCA">created</a> <a href="https://www.youtube.com/watch?v=lydaVvF3fWI">movies</a> still survive.</p>
+          </td>
+        </tr>
+      </table>
+      
+
+
+
+
+
+      <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+      <tr>
+        <td>
+        <br>
+        <p align="left">
+          <font size="2">
+          Legacy links:
+          <a href="old_website/old.html">old homepage, </a>
+          <a href="old_website/data/projects.html">class projects, </a>
+          <a href="https://www.flickr.com/photos/satti07">flickr photos, </a>
+          <a href="http://www.spoj.com/problems/AMBM/">programming</a>
+          <a href="http://www.spoj.com/problems/GIWED/">contest</a>
+          <a href="http://www.spoj.com/problems/FUSION/">problems</a>
+
+	    </font>
+        </p>
+        <p align="right">
+          <font size="1">
+          Template from <a href="https://jonbarron.info/">Jon Barron</a>.
+	    </font>
+        </p>
+        </td>
+      </tr>
+      </table>
+
+    </td>
+    </tr>
+  </table>
+  </body>
+</html>
