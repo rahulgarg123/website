@@ -1,144 +1,233 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
-<html>
-  <head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="generator" content="HTML Tidy for Linux/x86 (vers 11 February 2007), see www.w3.org">
-  <style type="text/css">
-    /* Color scheme stolen from Sergey Karayev */
-    
-    /* Responsive layout styles */
-    @media only screen and (max-width: 800px) {
-      .mobile-only {
-        display: table-row !important;
-      }
-      .desktop-only {
-        display: none !important;
-      }
+  <title>Rahul Garg</title>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    /* Reset and base styles */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
     }
     
-    @media only screen and (min-width: 801px) {
-      .mobile-only {
-        display: none !important;
-      }
-      .desktop-only {
-        display: flex !important;
-      }
+    body {
+      font-family: 'Lato', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      line-height: 1.7; /* Slightly increased line-height for readability */
+      color: #333;
+      background-color: #f9f9f9; /* Subtle background color */
+      font-size: 17px; /* Slightly larger base font size */
+      padding: 0;
+      margin: 0;
     }
+    
+    /* Container */
+    .container {
+      max-width: 850px; /* Slightly wider container */
+      margin: 0 auto;
+      padding: 50px 25px; /* Increased padding */
+    }
+    
+    /* Header */
+    .header {
+      text-align: center;
+      margin-bottom: 40px; /* Increased margin */
+      padding-bottom: 20px;
+      border-bottom: 1px solid #eee; /* Subtle separator */
+    }
+    
+    .name {
+      font-size: 36px; /* Larger name */
+      font-weight: 700;
+      margin-bottom: 8px; /* Adjusted margin */
+      color: #2c3e50; /* Darker, more modern color */
+    }
+    
+    /* Content layout */
+    .content {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 40px; /* Increased gap */
+      align-items: flex-start;
+    }
+    
+    .bio {
+      flex: 2; /* Give more space to bio */
+      min-width: 300px;
+    }
+    
+    .photo {
+      width: 220px; /* Slightly larger photo */
+      border-radius: 12px; /* More rounded corners */
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.12); /* Softer shadow */
+      object-fit: cover; /* Ensure image covers the area well */
+    }
+    
+    .photo-container {
+      flex: 1; /* Allow photo container to take space */
+      display: flex;
+      justify-content: center;
+      align-items: flex-start; /* Align photo to the top of its container */
+      padding-top: 10px; /* Add some padding if needed */
+    }
+    
+    /* Typography */
+    p {
+      margin-bottom: 20px; /* Increased paragraph spacing */
+      color: #555; /* Softer text color */
+    }
+    
     a {
-    color: #1772d0;
-    text-decoration:none;
-    }
-    a:focus, a:hover {
-    color: #f09228;
-    text-decoration:none;
-    }
-    body,td,th,tr,p,a {
-    font-family: 'Lato', Verdana, Helvetica, sans-serif;
-    font-size: 14px;
-    line-height: 1.5;
+      color: #007bff; /* Standard blue for links */
+      text-decoration: none;
+      font-weight: 600; /* Slightly bolder links */
+      transition: color 0.2s ease, background-color 0.2s ease;
     }
     
-    @media only screen and (max-width: 800px) {
-      body,td,th,tr,p,a {
+    a:hover, a:focus {
+      color: #0056b3; /* Darker blue on hover */
+      text-decoration: none; /* Remove underline, rely on color change */
+    }
+    
+    /* Links section */
+    .links {
+      margin-top: 30px; /* Increased margin */
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0; /* Remove gap, use margin on items */
+      align-items: center;
+    }
+    
+    .links a {
+      display: inline-block;
+      padding: 8px 12px; /* Add padding for better click targets */
+      margin-right: 10px; /* Spacing between links */
+      margin-bottom: 10px; /* Spacing for wrapped links */
+      border-radius: 5px;
+      transition: background-color 0.2s ease, color 0.2s ease;
+    }
+
+    .links a:hover, .links a:focus {
+      background-color: #e9ecef; /* Subtle background on hover */
+      color: #0056b3;
+    }
+    
+    /* Responsive styles */
+    @media (max-width: 768px) {
+      .container {
+        padding: 30px 20px;
+      }
+      
+      .content {
+        flex-direction: column;
+        gap: 25px;
+      }
+      
+      .mobile-photo {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 25px;
+      }
+      
+      .desktop-photo {
+        display: none;
+      }
+      
+      .name {
+        font-size: 30px;
+      }
+      
+      .links {
+        justify-content: center; /* Center links on mobile */
+        flex-direction: column; /* Stack links vertically */
+        align-items: center;
+        gap: 10px;
+      }
+      .links a {
+        margin-right: 0; /* Remove right margin for stacked links */
+        width: 100%; /* Make links full width */
+        text-align: center;
+      }
+      
+      .photo {
+        width: 180px; /* Adjusted mobile photo size */
+        margin: 0 auto;
+      }
+      .photo-container {
+        padding-top: 0;
+      }
+    }
+    
+    @media (min-width: 769px) {
+      .mobile-photo {
+        display: none;
+      }
+      
+      .desktop-photo {
+        display: flex; /* Use flex for consistency */
+        justify-content: center;
+        align-items: flex-start;
+      }
+      .bio {
+        flex: 2.5; /* Give bio a bit more space on wider screens */
+      }
+      .photo-container {
+        flex: 1;
+        max-width: 250px; /* Max width for desktop photo container */
+      }
+    }
+    
+    @media (max-width: 480px) {
+      .container {
+        padding: 25px 15px;
+      }
+      .name {
+        font-size: 26px;
+      }
+      body {
         font-size: 16px;
       }
-      name {
-        font-size: 28px;
+      .links a {
+        padding: 10px 15px;
       }
-      .container {
-        padding: 0 15px;
-      }
-    }
-    strong {
-    font-family: 'Lato', Verdana, Helvetica, sans-serif;
-    font-size: 14px;
-    }
-    heading {
-    font-family: 'Lato', Verdana, Helvetica, sans-serif;
-    font-size: 22px;
-    }
-    papertitle {
-    font-family: 'Lato', Verdana, Helvetica, sans-serif;
-    font-size: 14px;
-    font-weight: 700
-    }
-    name {
-    font-family: 'Lato', Verdana, Helvetica, sans-serif;
-    font-size: 32px;
-    }
-    .one
-    {
-    width: 160px;
-    height: 160px;
-    position: relative;
-    }
-    .two
-    {
-    width: 160px;
-    height: 160px;
-    position: absolute;
-    transition: opacity .2s ease-in-out;
-    -moz-transition: opacity .2s ease-in-out;
-    -webkit-transition: opacity .2s ease-in-out;
-    }
-    .fade {
-     transition: opacity .2s ease-in-out;
-     -moz-transition: opacity .2s ease-in-out;
-     -webkit-transition: opacity .2s ease-in-out;
-    }
-    span.highlight {
-        background-color: #ffffd0;
     }
   </style>
-  <title>Rahul Garg</title>
-  <meta http-equiv="Content-Type" content="text/html; charset=us-ascii">
-  <link href='http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
-  </head>
-  <body>
-  <div class="container" style="max-width: 800px; margin: 0 auto;">
-  <table style="max-width: 800px; width: 100%;" border="0" align="center" cellspacing="0" cellpadding="0">
-    <tr>
-    <td>
-      <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
-      <tr>
-        <td colspan="2" align="center">
-          <name>Rahul Garg</name>
-        </td>
-      </tr>
-      
-      <!-- Mobile-only image row that appears below the heading -->
-      <tr class="mobile-only" style="display: none;">
-        <td align="center" colspan="2">
-          <img src="RahulGarg_small.jpg" style="max-width: 200px; width: 100%; height: auto; border-radius: 5px; margin-bottom: 20px;">
-        </td>
-      </tr>
-      
-      <tr style="display: flex; flex-wrap: wrap;">
-        <td style="flex: 2; min-width: 280px;" valign="middle">
-        <p>I am a Principal Engineer at Netflix working on studio content production and promotion. Previously, I was a senior staff research scientist at Google, where I worked on computer vision, machine learning and computational photography to build features and products that delight users. I have worked on <a href="https://blog.google/products/photos/magic-eraser/">Magic Eraser</a> and <a href="https://blog.google/products/android/new-android-features-march-2022/#:~:text=Turn%20more%20photos,with%20Portrait%20Blur">Portrait Blur</a> for Google Photos, <a href="https://ai.googleblog.com/2018/11/learning-to-predict-depth-on-pixel-3.html">Portrait Mode</a> for Pixel Phones, <a href="https://workspaceupdates.googleblog.com/2023/08/studio-look-google-meet.html">Studio Look</a> and <a href="https://workspace.google.com/blog/product-announcements/duet-ai-in-workspace-now-available#:~:text=dynamic%20tiles%20and%20face%20detection">Dynamic Tiles</a> for Google Meet, Hand Tracking for AR/VR, and <a href="http://googlephotos.blogspot.com/2010/08/picasa-38-face-movies-picnik.html">Face Videos</a> for Google Picasa.
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <h1 class="name">Rahul Garg</h1>
+    </header>
+    
+    <!-- Mobile-only photo that appears at the top on mobile -->
+    <div class="mobile-photo">
+      <img src="RahulGarg_small.jpg" alt="Rahul Garg" class="photo">
+    </div>
+    
+    <main class="content">
+      <div class="bio">
+        <p>
+          I am a Principal Engineer at Netflix working on studio content production and promotion. Previously, I was a senior staff research scientist at Google, where I worked on computer vision, machine learning and computational photography to build features and products that delight users. I have worked on <a href="https://blog.google/products/photos/magic-eraser/">Magic Eraser</a> and <a href="https://blog.google/products/android/new-android-features-march-2022/#:~:text=Turn%20more%20photos,with%20Portrait%20Blur">Portrait Blur</a> for Google Photos, <a href="https://ai.googleblog.com/2018/11/learning-to-predict-depth-on-pixel-3.html">Portrait Mode</a> for Pixel Phones, <a href="https://workspaceupdates.googleblog.com/2023/08/studio-look-google-meet.html">Studio Look</a> and <a href="https://workspace.google.com/blog/product-announcements/duet-ai-in-workspace-now-available#:~:text=dynamic%20tiles%20and%20face%20detection">Dynamic Tiles</a> for Google Meet, Hand Tracking for AR/VR, and <a href="http://googlephotos.blogspot.com/2010/08/picasa-38-face-movies-picnik.html">Face Videos</a> for Google Picasa.
         </p>
-        <p>Before Google, I was one of the first employees at <a href="https://flutterapp.com/">Flutter</a>, a startup acquired by Google. I completed my PhD in Computer Science and Engineering at <a href="https://www.cs.washington.edu/">University of Washington</a>. In past life, I spent four wonderful years at <a href="http://www.cse.iitd.ernet.in/">IIT Delhi</a> where I got my Bachelors degree and graduated with President's Gold Medal.
+        <p>
+          Before Google, I was one of the first employees at <a href="https://flutterapp.com/">Flutter</a>, a startup acquired by Google. I completed my PhD in Computer Science and Engineering at <a href="https://www.cs.washington.edu/">University of Washington</a>. In past life, I spent four wonderful years at <a href="http://www.cse.iitd.ernet.in/">IIT Delhi</a> where I got my Bachelors degree and graduated with President's Gold Medal.
         </p>
-        <p align=center>
-          <a href="cv.pdf">CV</a> &nbsp/&nbsp
-          <a href="mailto:rahul.gargrahul@gmail.com">Email</a> &nbsp/&nbsp
-          <a href="https://scholar.google.com/citations?user=0eQjcEEAAAAJ">Google Scholar</a> &nbsp/&nbsp
-          <a href="https://www.linkedin.com/in/rahulgargrahul/"> LinkedIn </a>
-          <!-- <a href="https://drive.google.com/file/d/0B9FvCC1dMMyGVWlnSWlEdWk4cFU/view?usp=sharing"> Thesis </a> -->
-        </p>
-        </td>
         
-        <!-- Desktop-only image column that appears vertically centered with the main text -->
-        <td class="desktop-only" style="flex: 1; min-width: 150px; display: flex; justify-content: center; align-items: center;">
-          <img src="RahulGarg_small.jpg" style="max-width: 100%; height: auto; border-radius: 5px;">
-        </td>
-      </tr>
-      </table>
-
-
-    </td>
-    </tr>
-  </table>
+        <div class="links">
+          <a href="cv.pdf">CV</a>
+          <a href="mailto:rahul.gargrahul@gmail.com">Email</a>
+          <a href="https://scholar.google.com/citations?user=0eQjcEEAAAAJ">Google Scholar</a>
+          <a href="https://www.linkedin.com/in/rahulgargrahul/">LinkedIn</a>
+        </div>
+      </div>
+      
+      <!-- Desktop-only photo that appears on the right side on desktop -->
+      <div class="desktop-photo photo-container">
+        <img src="RahulGarg_small.jpg" alt="Rahul Garg" class="photo">
+      </div>
+    </main>
   </div>
-  </body>
+</body>
 </html>
