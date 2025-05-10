@@ -5,6 +5,25 @@
   <meta name="generator" content="HTML Tidy for Linux/x86 (vers 11 February 2007), see www.w3.org">
   <style type="text/css">
     /* Color scheme stolen from Sergey Karayev */
+    
+    /* Responsive layout styles */
+    @media only screen and (max-width: 800px) {
+      .mobile-only {
+        display: table-row !important;
+      }
+      .desktop-only {
+        display: none !important;
+      }
+    }
+    
+    @media only screen and (min-width: 801px) {
+      .mobile-only {
+        display: none !important;
+      }
+      .desktop-only {
+        display: flex !important;
+      }
+    }
     a {
     color: #1772d0;
     text-decoration:none;
@@ -81,25 +100,37 @@
     <tr>
     <td>
       <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+      <tr>
+        <td colspan="2" align="center">
+          <name>Rahul Garg</name>
+        </td>
+      </tr>
+      
+      <!-- Mobile-only image row that appears below the heading -->
+      <tr class="mobile-only" style="display: none;">
+        <td align="center" colspan="2">
+          <img src="RahulGarg_small.jpg" style="max-width: 200px; width: 100%; height: auto; border-radius: 5px; margin-bottom: 20px;">
+        </td>
+      </tr>
+      
       <tr style="display: flex; flex-wrap: wrap;">
         <td style="flex: 2; min-width: 280px;" valign="middle">
-        <p align="center">
-          <name>Rahul Garg</name>
-        </p>
         <p>I am a Principal Engineer at Netflix working on studio content production and promotion. Previously, I was a senior staff research scientist at Google, where I worked on computer vision, machine learning and computational photography to build features and products that delight users. I have worked on <a href="https://blog.google/products/photos/magic-eraser/">Magic Eraser</a> and <a href="https://blog.google/products/android/new-android-features-march-2022/#:~:text=Turn%20more%20photos,with%20Portrait%20Blur">Portrait Blur</a> for Google Photos, <a href="https://ai.googleblog.com/2018/11/learning-to-predict-depth-on-pixel-3.html">Portrait Mode</a> for Pixel Phones, <a href="https://workspaceupdates.googleblog.com/2023/08/studio-look-google-meet.html">Studio Look</a> and <a href="https://workspace.google.com/blog/product-announcements/duet-ai-in-workspace-now-available#:~:text=dynamic%20tiles%20and%20face%20detection">Dynamic Tiles</a> for Google Meet, Hand Tracking for AR/VR, and <a href="http://googlephotos.blogspot.com/2010/08/picasa-38-face-movies-picnik.html">Face Videos</a> for Google Picasa.
         </p>
         <p>Before Google, I was one of the first employees at <a href="https://flutterapp.com/">Flutter</a>, a startup acquired by Google. I completed my PhD in Computer Science and Engineering at <a href="https://www.cs.washington.edu/">University of Washington</a>. In past life, I spent four wonderful years at <a href="http://www.cse.iitd.ernet.in/">IIT Delhi</a> where I got my Bachelors degree and graduated with President's Gold Medal.
         </p>
         <p align=center>
-          <a href="cv.pdf">CV</a> &nbsp/&nbsp 
+          <a href="cv.pdf">CV</a> &nbsp/&nbsp
           <a href="mailto:rahul.gargrahul@gmail.com">Email</a> &nbsp/&nbsp
           <a href="https://scholar.google.com/citations?user=0eQjcEEAAAAJ">Google Scholar</a> &nbsp/&nbsp
           <a href="https://www.linkedin.com/in/rahulgargrahul/"> LinkedIn </a>
           <!-- <a href="https://drive.google.com/file/d/0B9FvCC1dMMyGVWlnSWlEdWk4cFU/view?usp=sharing"> Thesis </a> -->
         </p>
         </td>
-        <td style="flex: 1; min-width: 150px; display: flex; justify-content: center; align-items: flex-start;">
-        <img src="RahulGarg_small.jpg" style="max-width: 100%; height: auto; border-radius: 5px;">
+        
+        <!-- Desktop-only image column that appears aligned with the text -->
+        <td class="desktop-only" style="flex: 1; min-width: 150px; display: flex; justify-content: center; align-items: center;">
+          <img src="RahulGarg_small.jpg" style="max-width: 100%; height: auto; border-radius: 5px;">
         </td>
       </tr>
       </table>
